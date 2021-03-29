@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="es-es">
+
+<head>
+    <title>Planeta Zampa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <!--<style>
+    Aquí iría el estilo interno de la página pero lo he movido a una hoja de estilo css
+    </style>-->
+</head>
+
+<body>
+    <!--Cabecera de la página con logotipo, nombre y un eslogan-->
+    <header>
+        <img src="icon-1294845__340.webp" alt="Icono" height="120" style="float:left">
+        <h1 style="margin-left:135pt">PLANETA ZAMPA</h1>
+        <div class="PEDIDO"><a class="pedido" href="index.html">HACER PEDIDO</a></div>
+        <h3 style="margin-left:305pt">Papeo de otro mundo</h3>
+    </header>
+
+    <!--Barra de navegación bajo el header con 3 botones-->
+    <nav>
+        <!--Creo una clase "BOTON" para el div en la hoja de estilos que me permite clicarlos y colocarlos en el nav-->
+        <div class="BOTON"></div>
+        <div class="BOTON"><a class="navegador" href="index.html">INICIO</a></div>
+        <!--Prueba de botón dropdown para la carta-->
+        <div class="BOTON">
+            <div class="dropdown">
+                <a class="dropbtn" href="">CARTA</a>
+                <div class="dropdown-content">
+                    <a class="navegador" href="verduras.html">VERDURAS</a>
+                    <a class="navegador" href="carnes.html">CARNES</a>
+                    <a class="navegador" href="pescados.html">PESCADOS</a>
+                    <a class="navegador" href="vegan.html">VEGAN</a>
+                    <a class="navegador" href="postres.html">POSTRES</a>
+                    <a class="navegador" href="bebidas.html">BEBIDAS</a>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="BOTON">PROMOCIONES</div>
+    </nav>
+
+    <div class="CONTENEDOR">
+        <!--Creo un contenedor para poner dentro articles, divs para el menú y divs con imágenes para navegar por el menú-->
+        <article>En <span style="font-weight: bold; font-size: larger;">PLANETA ZAMPA</span> queremos llevar a tu puerta
+            comida tan buena que pienses que es de otro mundo.<br>
+            Deja que se te haga la boca agua mirando nuestro menú, elige qué te gustaría comer y pincha en HACER PEDIDO.
+            Nosotros nos encargamos del resto y en un rato recibiras en tu propia casa platos elaborados de manera
+            tradicional y tan buenos que creeras que vienen de otro planeta.</article>
+        <div class="MENU">
+            <form>
+                <fieldset>
+                    <legend>Formulario de pedidos</legend>
+                    <label>Plato:</label><input type="text" name="Plato"><br>
+                    <label>Nombre</label><input type="text" name="Nombre"><br>
+                    <label>Dirección</label><input type="text" name="Dirección"><br>
+                </fieldset>
+        </div>
+    </div>
+
+    <footer>
+        <!--Pie de la página-->
+        <h2>FOOTER</h2>
+    </footer>
+
+</body>
+
+</html>
