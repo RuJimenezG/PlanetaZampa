@@ -105,6 +105,21 @@ DIV.MENU {
     margin:0 auto;
 }
 
+.FORM {
+    background:/*#e29578*/white;
+    width:75%; 
+    /*min-height:500pt;*/
+    padding:10pt;
+    text-align:left; 
+    margin:0 auto;
+}
+
+.FORM table {
+    margin-left:auto;
+    margin-right:auto;
+    border-style:white;
+}
+
 DIV.PLATO {
     background:white/*#ffddd2*/; 
     height:135pt; 
@@ -203,3 +218,5 @@ a.dropbtn {
   td {
       border: 1px solid black;
   }
+
+
