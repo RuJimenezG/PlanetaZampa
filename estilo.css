@@ -1,4 +1,5 @@
 BODY {
+    background: #006d77;
     font-family:Verdana;
 }
 
@@ -96,7 +97,7 @@ DIV.SIDEBAR {
 }*/
 
 DIV.MENU {
-    background:#e29578;
+    background:/*#e29578*/white;
     width:95%; 
     /*min-height:500pt;*/
     padding:10pt;
@@ -123,7 +124,7 @@ a:link, a:visited {
     }
 
 DIV.SEPARADOR {
-    background:#e29578;
+    background:/*#e29578*/white;
     width:95%;
     height:10pt;
 }
