@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE cliente [
+    <!ELEMENT cliente (nombre,apellido1,apellido2,direccion,localidad,provincia,telefono,correo,pedidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido1 (#PCDATA)>
+    <!ELEMENT apellido2 (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT localidad (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    <!ELEMENT correo (#PCDATA)>
+    <!ELEMENT pedidos (pedido*)>
+    <!ELEMENT pedido (fecha,importe)>
+    <!ATTLIST pedido idpedido ID #REQUIRED>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT importe (#PCDATA)>
+    <!ATTLIST impote moneda CDATA #FIXED euro>
+]>
+
+
+<cliente>
+    <nombre>Daniel</nombre>
+    <apellido1>Ruiz</apellido1>
+    <apellido2>Rubio</apellido2>
+    <direccion>Calle Falsa 123</direccion>
+    <localidad>Madrid</localidad>
+    <provincia>Madrid</provincia>
+    <telefono>612345666</telefono>
+    <correo>drrubio@falsomail.com</correo>
+    <pedidos>
+        <pedido idpedido="ped0001">
+            <fecha>05/03/21</fecha>
+            <importe moneda="euro">25</importe>
+        </pedido>
+        <pedido idpedido="ped0004">
+            <fecha>19/03/21</fecha>
+            <importe moneda="euro">18</importe>
+        </pedido>
+        <pedido idpedido="ped0007">
+            <fecha>02/04/21</fecha>
+            <importe moneda="euro">30</importe>
+        </pedido>
+    </pedidos>
+</cliente>
+<cliente>
+    <nombre>Javier</nombre>
+    <apellido1>Domingo</apellido1>
+    <apellido2>Pelaez</apellido2>
+    <direccion>Calle Real 123</direccion>
+    <localidad>Madrid</localidad>
+    <provincia>Madrid</provincia>
+    <telefono>669345664</telefono>
+    <correo>javierdpelaez@fakemail.com</correo>
+    <pedidos>
+        <pedido idpedido="ped0003">
+            <fecha>17/03/21</fecha>
+            <importe moneda="euro">30</importe>
+        </pedido>
+        <pedido idpedido="ped0009">
+            <fecha>10/04/21</fecha>
+            <importe moneda="euro">27</importe>
+        </pedido>
+
+    </pedidos>
+
+</cliente>
+<cliente>
+    <nombre>Andres</nombre>
+    <apellido1>Sancho</apellido1>
+    <apellido2>Castilla</apellido2>
+    <direccion>Calle Feliz 63</direccion>
+    <localidad>Tres Cantos</localidad>
+    <provincia>Madrid</provincia>
+    <telefono>659634789</telefono>
+    <correo>andrescastilla@fakemail.com</correo>
+    <pedidos>
+        <pedido idpedido="ped0002">
+            <fecha>08/03/21</fecha>
+            <importe moneda="euro">30</importe>
+        </pedido>
+        <pedido idpedido="ped0007">
+            <fecha>30/03/21</fecha>
+            <importe moneda="euro">30</importe>
+        </pedido>
+    </pedidos>
+
+</cliente>
+<cliente>
+    <nombre>Maria</nombre>
+    <apellido1>Sabado</apellido1>
+    <apellido2>Pozo</apellido2>
+    <direccion>Calle Librerias 1</direccion>
+    <localidad>Fuenlabrada</localidad>
+    <provincia>Madrid</provincia>
+    <telefono>656122857</telefono>
+    <correo>sabadopozomaria@fakemail.com</correo>
+    <pedidos>
+        <pedido idpedido="ped0005">
+            <fecha>23/03/21</fecha>
+            <importe>40</importe>
+        </pedido>
+        <pedido idpedido="ped0006">
+            <fecha>25/03/21</fecha>
+            <importe>12</importe>
+        </pedido>
+
+    </pedidos>
+
+</cliente>
+
+<cliente>
+    <nombre>Fernanda</nombre>
+    <apellido1>Ugarte</apellido1>
+    <apellido2>Martin</apellido2>
+    <direccion>Calle Cedros 14</direccion>
+    <localidad>Mostoles</localidad>
+    <provincia>Madrid</provincia>
+    <telefono>669631474</telefono>
+    <correo>umfernanda@falsomail.com</correo>
+    <pedidos>
+        <pedido idpedido="ped0008">
+            <fecha>05/04/21</fecha>
+            <importe moneda="euro">18</importe>
+        </pedido>
+    </pedidos>
+
+</cliente>

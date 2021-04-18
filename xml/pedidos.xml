@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE pedido [
+    <!ELEMENT (,,,,,,,,)>
+    <!ELEMENT (#PCDATA)>
+]>
+
+<pedido>
+    <idpedido></idpedido>
+    <prductos>
+        <producto>
+            <idproducto></idproducto>
+            <tipo></tipo>
+            <nombre></nombre>
+            <cantidad></cantidad>
+            <precio></precio>
+            <alergenos></alergenos>
+            <calorias></calorias>
+        </producto>
+
+    </prductos>
+</pedido>
