@@ -1,89 +1,91 @@
 BODY {
     background: #006d77;
-    font-family:Verdana;
+    font-family: Verdana;
 }
 
 HEADER {
-    background:#006d77;
-    padding:5pt;
-    color:white;
+    background: #006d77;
+    padding: 5pt;
+    color: white;
     vertical-align: middle;
 }
 
 NAV {
-    background:#83c5be;
-    height:35pt;
-    padding:5pt;
+    background: #83c5be;
+    height: 35pt;
+    padding: 5pt;
 }
 
 DIV.BOTON {
-    background:#83c5be;
-    color:white;
-    width:20%;
-    text-align:center; 
-    margin:auto; 
-    display:inline-block;
+    background: #83c5be;
+    color: white;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    display: inline-block;
     font-weight: bold;
     /*border: solid;*/
-    }
-    
+}
+
 DIV.PEDIDO {
-    background:#e29578;
-    color:white;
-    width:10%;
-    text-align:center; 
-    margin:auto; 
+    background: #e29578;
+    color: white;
+    width: 10%;
+    text-align: center;
+    margin: auto;
     /* display:inline-block; el atributo display se ve superpuesto por float */
-    position:relative; 
+    position: relative;
     /*ver el atributo position en https://www.w3schools.com/cssref/pr_class_position.asp*/
     bottom: 20px;
     right: 350px;
-    float:right;
+    float: right;
     font-weight: bold;
-    }
+}
 
 a.pedido:link, a.pedido:visited {
     background-color: #d11c1c;
     color: white;
-    padding: 14px /*25px*/;
+    padding: 14px/*25px*/
+    ;
     width: 94%;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    }
-      
+}
+
 a.pedido:hover, a.pedido:active {
     background-color: #e29578;
     font-weight: bold;
-    }
+}
 
 a.navegador:link, a.navegador:visited {
     background-color: #83c5be;
     color: white;
-    padding: 14px /*25px*/;
+    padding: 14px/*25px*/
+    ;
     width: 80%;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    }
-      
+}
+
 a.navegador:hover, a.navegador:active {
     background-color: #e29578;
     font-weight: bold;
-    }
-
-DIV.CONTENEDOR {
-    background:#006d77;
-    overflow:auto;
 }
 
-ARTICLE{
-    background:#edf6f9;
-    width:95%;
-    padding:10pt;
-    margin:0 auto;
+DIV.CONTENEDOR {
+    background: #006d77;
+    overflow: auto;
+}
+
+ARTICLE {
+    background: #edf6f9;
+    width: 95%;
+    padding: 10pt;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -97,38 +99,46 @@ DIV.SIDEBAR {
 }*/
 
 DIV.MENU {
-    background:/*#e29578*/white;
-    width:95%; 
+    background: /*#e29578*/
+    white;
+    width: 95%;
     /*min-height:500pt;*/
-    padding:10pt;
-    text-align:center; 
-    margin:0 auto;
+    padding: 10pt;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .FORM {
-    background:/*#e29578*/white;
-    width:75%; 
+    background: /*#e29578*/
+    white;
+    width: 75%;
     /*min-height:500pt;*/
-    padding:10pt;
-    text-align:left; 
-    margin:0 auto;
+    padding: 10pt;
+    text-align: left;
+    margin: 0 auto;
 }
 
 .FORM table {
-    margin-left:auto;
-    margin-right:auto;
-    border-style:white;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: white;
 }
 
 DIV.PLATO {
-    background:white/*#ffddd2*/; 
-    height:135pt; 
-    width:23%;
-    text-align:center; 
+    background: white/*#ffddd2*/
+    ;
+    height: 135pt;
+    width: 23%;
+    text-align: center;
     font-weight: bold;
-    margin:auto; 
-    padding:5pt;
-    display:inline-block;
+    margin: auto;
+    padding: 5pt;
+    display: inline-block;
+}
+
+.PLATO img {
+    width: 90%;
+    height: 90%;
 }
 
 a:link, a:visited {
@@ -136,87 +146,98 @@ a:link, a:visited {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    }
-
-DIV.SEPARADOR {
-    background:/*#e29578*/white;
-    width:95%;
-    height:10pt;
 }
 
-FOOTER{
-    background:#006d77;
-    height:100pt;
-    text-align:center;
-    padding:10pt;
-    color:white;
+DIV.SEPARADOR {
+    background: /*#e29578*/
+    white;
+    width: 95%;
+    height: 10pt;
+}
+
+FOOTER {
+    background: #006d77;
+    height: 100pt;
+    text-align: center;
+    padding: 10pt;
+    color: white;
 }
 
 /* Botón dropdown */
+
 a.dropbtn {
     background-color: #83c5be;
     color: white;
     width: 100%;
     text-align: center;
-    margin:auto;
+    margin: auto;
     display: inline-block;
     font-weight: bold;
-
     padding: 14px;
     border: none;
     /*font-size: 16px;*/
     font-family: verdana;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
     /*position: relative;*/
     display: inline-block;
-    color:white;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+    color: white;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #83c5be;
     max-width: 160px;
     /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  /*.dropdown-content a {
+}
+
+/* Links inside the dropdown */
+
+/*.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }*/
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #e29578;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #e29578;}
 
-  table.plato {
-      /*width: 100%;*/
-      margin-left: auto;
-      margin-right: auto;
-      border:1px solid black;
-      /*background: white;*/
-  }
+/* Change color of dropdown links on hover */
 
-  thead.plato {
-      font-weight: bold;
-      border:1px solid black;
-  }
-  
-  td {
-      border: 1px solid black;
-  }
+.dropdown-content a:hover {
+    background-color: #e29578;
+}
 
+/* Show the dropdown menu on hover */
 
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #e29578;
+}
+
+table.plato {
+    /*width: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    /*background: white;*/
+}
+
+thead.plato {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
