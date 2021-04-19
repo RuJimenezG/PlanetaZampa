@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE pedido [
-    <!ELEMENT (,,,,,,,,)>
-    <!ELEMENT (#PCDATA)>
+    <!ELEMENT pedido (idpedido,productos)>
+    <!ELEMENT idpedido (#PCDATA)>
+    <!ELEMENT productos (producto)>
+    <!ELEMENT producto (idproducto,tipo,nombre,cantidad,precio,alergenos,calorias)>
+    <!ELEMENT idproducto (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT alergenos (#PCDATA)>
+    <!ELEMENT calorias (#PCDATA)>
 ]>
 
 <pedido>
     <idpedido></idpedido>
-    <prductos>
+    <productos>
         <producto>
             <idproducto></idproducto>
             <tipo></tipo>
@@ -17,6 +26,5 @@
             <alergenos></alergenos>
             <calorias></calorias>
         </producto>
-
-    </prductos>
+    </productos>
 </pedido>

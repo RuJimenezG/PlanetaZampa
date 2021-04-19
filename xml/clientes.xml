@@ -10,6 +10,10 @@
     <!ELEMENT provincia (#PCDATA)>
     <!ELEMENT telefono (#PCDATA)>
     <!ELEMENT correo (#PCDATA)>
+    <!ELEMENT tarjeta (numtarjeta, fechacaducidad, codseguridad)>
+    <!ELEMENT numtarjeta (#PCDATA)>
+    <!ELEMENT fechacaducidad (#PCDATA)>
+    <!ELEMENT codseguridad (#PCDATA)>
     <!ELEMENT pedidos (pedido*)>
     <!ELEMENT pedido (fecha,importe)>
     <!ATTLIST pedido idpedido ID #REQUIRED>
@@ -28,6 +32,11 @@
     <provincia>Madrid</provincia>
     <telefono>612345666</telefono>
     <correo>drrubio@falsomail.com</correo>
+    <tarjeta>
+        <numtarjeta>1234567890123456</numtarjeta>
+        <fechacaducidad>07/21</fechacaducidad>
+        <codseguridad>123</codseguridad>
+    </tarjeta>
     <pedidos>
         <pedido idpedido="ped0001">
             <fecha>05/03/21</fecha>
@@ -43,6 +52,7 @@
         </pedido>
     </pedidos>
 </cliente>
+
 <cliente>
     <nombre>Javier</nombre>
     <apellido1>Domingo</apellido1>
@@ -52,6 +62,11 @@
     <provincia>Madrid</provincia>
     <telefono>669345664</telefono>
     <correo>javierdpelaez@fakemail.com</correo>
+    <tarjeta>
+        <numtarjeta>1112223334445556</numtarjeta>
+        <fechacaducidad>07/22</fechacaducidad>
+        <codseguridad>456</codseguridad>
+    </tarjeta>
     <pedidos>
         <pedido idpedido="ped0003">
             <fecha>17/03/21</fecha>
@@ -61,10 +76,9 @@
             <fecha>10/04/21</fecha>
             <importe moneda="euro">27</importe>
         </pedido>
-
     </pedidos>
-
 </cliente>
+
 <cliente>
     <nombre>Andres</nombre>
     <apellido1>Sancho</apellido1>
@@ -74,6 +88,11 @@
     <provincia>Madrid</provincia>
     <telefono>659634789</telefono>
     <correo>andrescastilla@fakemail.com</correo>
+    <tarjeta>
+        <numtarjeta>121245457878963</numtarjeta>
+        <fechacaducidad>12/23</fechacaducidad>
+        <codseguridad>888</codseguridad>
+    </tarjeta>
     <pedidos>
         <pedido idpedido="ped0002">
             <fecha>08/03/21</fecha>
@@ -84,8 +103,8 @@
             <importe moneda="euro">30</importe>
         </pedido>
     </pedidos>
-
 </cliente>
+
 <cliente>
     <nombre>Maria</nombre>
     <apellido1>Sabado</apellido1>
@@ -95,6 +114,11 @@
     <provincia>Madrid</provincia>
     <telefono>656122857</telefono>
     <correo>sabadopozomaria@fakemail.com</correo>
+    <tarjeta>
+        <numtarjeta>8564231478536951</numtarjeta>
+        <fechacaducidad>04/23</fechacaducidad>
+        <codseguridad>268</codseguridad>
+    </tarjeta>
     <pedidos>
         <pedido idpedido="ped0005">
             <fecha>23/03/21</fecha>
@@ -104,9 +128,7 @@
             <fecha>25/03/21</fecha>
             <importe>12</importe>
         </pedido>
-
     </pedidos>
-
 </cliente>
 
 <cliente>
@@ -118,11 +140,15 @@
     <provincia>Madrid</provincia>
     <telefono>669631474</telefono>
     <correo>umfernanda@falsomail.com</correo>
+    <tarjeta>
+        <numtarjeta>6327856914268459</numtarjeta>
+        <fechacaducidad>07/22</fechacaducidad>
+        <codseguridad>576</codseguridad>
+    </tarjeta>
     <pedidos>
         <pedido idpedido="ped0008">
             <fecha>05/04/21</fecha>
             <importe moneda="euro">18</importe>
         </pedido>
     </pedidos>
-
 </cliente>
