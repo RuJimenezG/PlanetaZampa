@@ -76,12 +76,20 @@ a.navegador:hover, a.navegador:active {
     font-weight: bold;
 }
 
-DIV.CONTENEDOR {
+.CONTENEDOR {
     background: #006d77;
     overflow: auto;
 }
 
-ARTICLE {
+/*ARTICLE {
+    background: #edf6f9;
+    width: 95%;
+    padding: 10pt;
+    margin: 0 auto;
+    text-align: center;
+}*/
+
+.CONTENEDOR p {
     background: #edf6f9;
     width: 95%;
     padding: 10pt;
@@ -243,7 +251,7 @@ td {
 }
 
 iframe.menu {
-    width:100%;
-    height: 600;
-    border:none;
+    width: 100%;
+    height: 600px;
+    border: none;
 }
