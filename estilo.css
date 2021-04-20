@@ -175,7 +175,7 @@ div.form {
 .form table {
     margin-left: auto;
     margin-right: auto;
-    border-style: white;
+    border-color: white;
 }
 
 /* Botón dropdown: pasas el cursor por encima y se despliega el menú*/
