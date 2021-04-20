@@ -241,3 +241,9 @@ thead.plato {
 td {
     border: 1px solid black;
 }
+
+iframe.menu {
+    width:100%;
+    height: 600;
+    border:none;
+}
