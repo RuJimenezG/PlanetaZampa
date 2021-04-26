@@ -7,6 +7,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+
+    <script>
+        //Comprueba que los inputs nombre, apellidos, nif, email, telefono, direccion, tarjeta, caducidad y codigo-seguridad no están vacíos.
+        function comprobar() {
+            var campoNombre = document.getElementById("fnombre").value;
+            var campoApellidos = document.getElementById("fapellidos").value;
+            var campoNif = document.getElementById("fnif").value;
+            var campoEmail = document.getElementById("femail").value;
+            var campoTelefono = document.getElementById("ftelefono").value;
+            var campoDireccion = document.getElementById("fdireccion").value;
+            var campoTarjeta = document.getElementById("ftarjeta").value;
+            var campoCaducidad = document.getElementById("fcaducidad").value;
+            var campoCodigo = document.getElementById("fcodigo").value;
+            if (campoNombre == "" || campoApellidos == "" || campoNif == "" || campoEmail == "" || campoTelefono == "" || campoDireccion == ""
+                || campoTarjeta == "" || campoCaducidad == "" || campoCodigo == "") {
+                alert("Por favor, rellene todos los campos.");
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -18,10 +38,11 @@
             resto y en un rato recibiras en tu propia casa platos elaborados de manera
             tradicional y tan buenos que creeras que vienen de otro planeta.</p>
         <div class="form">
-            <form action="mailto:rjimenez591@alumno.uned.es" method="POST" enctype="text/plain">
+            <form action="mailto:rjimenez591@alumno.uned.es" method="POST" enctype="text/plain" id="form1">
                 <fieldset>
                     <legend>Menús</legend>
-                    <label>Menú 1: Salteado de legumbres a la plancha + Bistec con patatas fritas + Refresco - 950 kcal - 13
+                    <label>Menú 1: Salteado de legumbres a la plancha + Bistec con patatas fritas + Refresco - 950 kcal
+                        - 13
                         €</label><br>
                     <input type="number" name="menu1"><br>
                     <label>Menú 2: Salteado de verduras con arroz + Salmón al horno con espárragos y puré de patata +
@@ -30,17 +51,20 @@
                     <label>Menú 3: Sepia salteada con verduritas + Salchicha alemana al horno + Refresco - 950 kcal - 13
                         €</label><br>
                     <input type="number" name="menu3"><br>
-                    <label>Menú 4: Esparragos a la plancha con jamón + Boquerones fritos al limón + Refresco - 850 Kcal - 13
+                    <label>Menú 4: Esparragos a la plancha con jamón + Boquerones fritos al limón + Refresco - 850 Kcal
+                        - 13
                         €</label><br>
                     <input type="number" name="menu4"><br>
-                    <label>Menú 5: Guisantes con jamón y huevo + Pollo asado con verduras salteadas + Refresco - 950 kcal - 13
+                    <label>Menú 5: Guisantes con jamón y huevo + Pollo asado con verduras salteadas + Refresco - 950
+                        kcal - 13
                         €</label><br>
                     <input type="number" name="menu5"><br>
                 </fieldset>
                 <fieldset>
                     <legend>Verduras</legend>
                     <div id="salteado-legumbres">
-                        <label><span name="nombre">Salteado de legumbres a la plancha</span> - <span name="calorias">250</span> kcal -
+                        <label><span name="nombre">Salteado de legumbres a la plancha</span> - <span
+                                name="calorias">250</span> kcal -
                             <span name="precio">5</span> €</label><br>
                         <input type="number" name="salteado-legumbres"><br>
                     </div>
@@ -115,39 +139,45 @@
                     <table>
                         <tr>
                             <td>Nobre:</td>
-                            <td><input type="text" name="nombre"></td>
+                            <td><input type="text" name="nombre" id="fnombre"></td>
                         </tr>
                         <tr>
                             <td>Apellidos:</td>
-                            <td><input type="text" name="apellidos"></td>
+                            <td><input type="text" name="apellidos" id="fapellidos"></td>
                         </tr>
                         <tr>
                             <td>NIF:</td>
-                            <td><input type="text" name="nif"></td>
+                            <td><input type="text" name="nif" id="fnif"></td>
                         <tr>
                             <td>Correo electrónico:</td>
-                            <td><input type="text" name="email"></td>
+                            <td><input type="text" name="email" id="femail"></td>
                         </tr>
                         <tr>
                             <td>Teléfono:</td>
-                            <td><input type="text" name="telefono"></td>
+                            <td><input type="text" name="telefono" id="ftelefono"></td>
                         </tr>
                         <tr>
                             <td>Dirección de entrega:</td>
-                            <td><input type="text" name="direccion"></td>
+                            <td><input type="text" name="direccion" id="fdireccion"></td>
                         </tr>
                         <tr>
                             <td>Tarjeta bancaria:</td>
-                            <td><input type="text" name="tarjeta"></td>
+                            <td><input type="text" name="tarjeta" id="ftarjeta"></td>
+                        </tr>
+                        <tr>
+                            <td>Caducidad:</td>
+                            <td><input type="text" name="caducidad" id="fcaducidad"></td>
+                        </tr>
+                        <tr>
+                            <td>Código de seguridad:</td>
+                            <td><input type="text" name="codigo-seguridad" id="fcodigo"></td>
                         </tr>
                     </table>
                 </fieldset>
-
                 <input type="reset">
                 <input type="submit" value="Hacer pedido">
-
             </form>
-            <button value="calcular" onclick="calcula()">Calcular</button>
+            <button value="calcular" onclick="comprobar()">Calcular</button>
         </div>
     </div>
 
