@@ -20,19 +20,110 @@
         <div class="form">
             <form action="mailto:rjimenez591@alumno.uned.es" method="POST" enctype="text/plain">
                 <fieldset>
+                    <legend>Menús</legend>
+                    <label>Menú 1: Salteado de legumbres a la plancha + Bistec con patatas fritas + Refresco - 950 kcal - 13
+                        €</label><br>
+                    <input type="number" name="menu1"><br>
+                    <label>Menú 2: Salteado de verduras con arroz + Salmón al horno con espárragos y puré de patata +
+                        Refresco - 950 kcal - 12 €</label><br>
+                    <input type="number" name="menu2"><br>
+                    <label>Menú 3: Sepia salteada con verduritas + Salchicha alemana al horno + Refresco - 950 kcal - 13
+                        €</label><br>
+                    <input type="number" name="menu3"><br>
+                    <label>Menú 4: Esparragos a la plancha con jamón + Boquerones fritos al limón + Refresco - 850 Kcal - 13
+                        €</label><br>
+                    <input type="number" name="menu4"><br>
+                    <label>Menú 5: Guisantes con jamón y huevo + Pollo asado con verduras salteadas + Refresco - 950 kcal - 13
+                        €</label><br>
+                    <input type="number" name="menu5"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Verduras</legend>
+                    <div id="salteado-legumbres">
+                        <label><span name="nombre">Salteado de legumbres a la plancha</span> - <span name="calorias">250</span> kcal -
+                            <span name="precio">5</span> €</label><br>
+                        <input type="number" name="salteado-legumbres"><br>
+                    </div>
+                    <label>Salteado de verduras con arroz - 450 kcal - 6 €</label><br>
+                    <input type="number" name="salteado-verduras"><br>
+                    <label>Sepia salteada con verduritas - 400 kcal - 7 €</label><br>
+                    <input type="number" name="sepia"><br>
+                    <label>Espárragos a la plancha con jamón - 250 kcal - 5 €</label><br>
+                    <input type="number" name="esparragos"><br>
+                    <label>Guisantes con jamón y huevo - 350 kcal - 6 €</label><br>
+                    <input type="number" name="guisantes"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Carnes</legend>
+                    <label>Bistec con patatas fritas - 650 kcal - 8 €</label><br>
+                    <input type="number" name="bistec"><br>
+                    <label>Pollo asado con verduras salteadas - 550 kcal - 6 €</label><br>
+                    <input type="number" name="pollo"><br>
+                    <label>Costillas a la barbacoa - 650 kcal - 7 €</label><br>
+                    <input type="number" name="costillas"><br>
+                    <label>Salchicha alemana al horno - 450 kcal - 5 €</label><br>
+                    <input type="number" name="salchicha"><br>
+                    <label>Alitas de pollo en salsa agridulce - 450 kcal - 6 €</label><br>
+                    <input type="number" name="alitas"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Pescados</legend>
+                    <label>Lubina al horno en salsa de lima con romero y espárragos - 450 kcal - 5 €</label><br>
+                    <input type="number" name="lubina"><br>
+                    <label>Dorada al horno con patatas panaderas - 500 kcal - 6 €</label><br>
+                    <input type="number" name="dorada"><br>
+                    <label>Boquerones fritos al limón - 550 kcal - 7 €</label><br>
+                    <input type="number" name="boquerones"><br>
+                    <label>Salmón al horno con espárragos y puré de patata - 450 kcal - 5 €</label><br>
+                    <input type="number" name="salmón"><br>
+                    <label>Medallones de merluza a la plancha con tomate - 400 kcal - 6 €</label><br>
+                    <input type="number" name="merluza"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Postres</legend>
+                    <label>Crema de yogur con fresas - 450 kcal - 2,50 €</label><br>
+                    <input type="number" name="yogur"><br>
+                    <label>Pudin casero - 500 kcal - 2,50 €</label><br>
+                    <input type="number" name="pudin"><br>
+                    <label>Queso fresco con miel y nueces - 250 kcal - 1,50 €</label><br>
+                    <input type="number" name="queso"><br>
+                    <label>Tarta marmol rosa - 600 kcal - 3,50 €</label><br>
+                    <input type="number" name="tarta"><br>
+                    <label>Copa de helado de varios sabores - 600 kcal - 3 €</label><br>
+                    <input type="number" name="helado"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Bebidas</legend>
+                    <label>Vino de la casa - 50 kcal - 5 €</label><br>
+                    <input type="number" name="vino"><br>
+                    <label>Refresco - 50 kcal - 2,50 €</label><br>
+                    <input type="number" name="refresco"><br>
+                    <label>Agua mineral - 0 kcal - 1,50 €</label><br>
+                    <input type="number" name="agua"><br>
+                    <label>Cerveza - 50 kcal - 2 €</label><br>
+                    <input type="number" name="cerveza"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Extras</legend>
+                    <label>Pan - 200 kcal - 1 €</label><br>
+                    <input type="number" name="pan"><br>
+                    <label>Ensalada mixta - 100 kcal - 2,50 €</label><br>
+                    <input type="number" name="ensalada"><br>
+                </fieldset>
+                <fieldset>
                     <legend>Formulario de pedidos</legend>
                     <table>
                         <tr>
                             <td>Nobre:</td>
-                            <td><input type="text" name="Nombre"></td>
+                            <td><input type="text" name="nombre"></td>
                         </tr>
                         <tr>
                             <td>Apellidos:</td>
-                            <td><input type="text" name="Apellidos"></td>
+                            <td><input type="text" name="apellidos"></td>
                         </tr>
                         <tr>
                             <td>NIF:</td>
-                            <td><input type="text" name="NIF"></td>
+                            <td><input type="text" name="nif"></td>
                         <tr>
                             <td>Correo electrónico:</td>
                             <td><input type="text" name="email"></td>
@@ -51,98 +142,32 @@
                         </tr>
                     </table>
                 </fieldset>
-                <fieldset>
-                    <legend>Menús</legend>
-                    <label>Menú 1: Salteado de legumbres a la plancha + Bistec con patatas fritas + Refresco = 13 €</label><br>
-                    <input type="number" name="menu1"><br>
-                    <label>Menú 2: Salteado de verduras con arroz + Salmón al horno con espárragos y puré de patata + Refresco = 12 €</label><br>
-                    <input type="number" name="menu2"><br>
-                    <label>Menú 3: Sepia salteada con verduritas + Salchicha alemana al horno + Refresco = 13 €</label><br>
-                    <input type="number" name="menu3"><br>
-                    <label>Menú 4: Esparragos a la plancha con jamón + Boquerones fritos al limón + Refresco = 13 €</label><br>
-                    <input type="number" name="menu4"><br>
-                    <label>Menú 5: Guisantes con jamón y huevo + Pollo asado con verduras salteadas + Refresco = 13 €</label><br>
-                    <input type="number" name="menu5"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Verduras</legend>
-                    <label>Salteado de legumbres a la plancha - 5 €</label><br>
-                    <input type="number" name="Salteado de legumbres a la plancha"><br>
-                    <label>Salteado de verduras con arroz - 6 €</label><br>
-                    <input type="number" name="Salteado de verduras con arroz"><br>
-                    <label>Sepia salteada con verduritas - 7 €</label><br>
-                    <input type="number" name="Sepia salteada con verduritas"><br>
-                    <label>Espárragos a la plancha con jamón - 5€</label><br>
-                    <input type="number" name="Espárragos a la plancha con jamón"><br>
-                    <label>Guisantes con jamón y huevo - 6 €</label><br>
-                    <input type="number" name="Guisantes con jamón y huevo"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Carnes</legend>
-                    <label>Bistec con patatas fritas - 8 €</label><br>
-                    <input type="number" name="Bistec con patatas fritas"><br>
-                    <label>Pollo asado con verduras salteadas - 6 €</label><br>
-                    <input type="number" name="Pollo asado con verduras salteadas"><br>
-                    <label>Costillas a la barbacoa - 7 €</label><br>
-                    <input type="number" name="Costillas a la barbacoa"><br>
-                    <label>Salchicha alemana al horno - 5 €</label><br>
-                    <input type="number" name="Salchicha alemana al horno"><br>
-                    <label>Alitas de pollo en salsa agridulce - 6 €</label><br>
-                    <input type="number" name="Alitas de pollo en salsa agridulce"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Pescados</legend>
-                    <label>Lubina al horno en salsa de lima con romero y espárragos - 5 €</label><br>
-                    <input type="number" name="Lubina al horno en salsa de lima con romero y espárragos"><br>
-                    <label>Dorada al horno con patatas panaderas - 6 €</label><br>
-                    <input type="number" name="Dorada al horno con patatas panaderas"><br>
-                    <label>Boquerones fritos al limón - 7 €</label><br>
-                    <input type="number" name="Boquerones fritos al limón"><br>
-                    <label>Salmón al horno con espárragos y puré de patata - 5 €</label><br>
-                    <input type="number" name="Salmón al horno con espárragos y puré de patata"><br>
-                    <label>Medallones de merluza a la plancha con tomate - 6 €</label><br>
-                    <input type="number" name="Medallones de merluza a la plancha con tomate"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Postres</legend>
-                    <label>Crema de yogur con fresas - 2,50 €</label><br>
-                    <input type="number" name="Crema de yogur con fresas"><br>
-                    <label>Pudin casero - 2,50 €</label><br>
-                    <input type="number" name="Pudin casero"><br>
-                    <label>Queso fresco con miel y nueces - 1,50 €</label><br>
-                    <input type="number" name="Queso fresco con miel y nueces"><br>
-                    <label>Tarta marmol rosa - 3,50 €</label><br>
-                    <input type="number" name="Tarta marmol rosa"><br>
-                    <label>Copa de helado de varios sabores - 3 €</label><br>
-                    <input type="number" name="Copa de helado de varios sabores"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Bebidas</legend>
-                    <label>Vino de la casa - 5 €</label><br>
-                    <input type="number" name="Vino de la casa"><br>
-                    <label>Refrescos - 2,50 €</label><br>
-                    <input type="number" name="Refrescos"><br>
-                    <label>Agua mineral - 1,50 €</label><br>
-                    <input type="number" name="Agua mineral"><br>
-                    <label>Cerveza - 2 €</label><br>
-                    <input type="number" name="Cerveza"><br>
-                </fieldset>
-                <fieldset>
-                    <legend>Extras</legend>
-                    <label>Pan - 1 €</label><br>
-                    <input type="number" name="Pan"><br>
-                    <label>Ensalada sencilla - 2,50 €</label><br>
-                    <input type="number" name="Ensalada"><br>
-                </fieldset>
-                <button value="calcular">Calcular</button>
+
                 <input type="reset">
                 <input type="submit" value="Hacer pedido">
-            </form>
 
-                
+            </form>
+            <button value="calcular" onclick="calcula()">Calcular</button>
         </div>
     </div>
 
+    <script>
+        function calcula() {
+            div_plato = document.getElementById("salteado-legumbres");
+            div_nombre = div_plato.querySelector("span[name='nombre']");
+            div_input = div_plato.querySelector("input");
+            t_nombre = div_nombre.textContent;
+            t_input = div_input.value;
+            //div_label = div_plato.childNodes[0];
+            //t_nombrePlato = div_plato.getElementsByName("nombre")[0];
+
+
+            a = 5;
+
+        }
+
+
+    </script>
 
 </body>
 
