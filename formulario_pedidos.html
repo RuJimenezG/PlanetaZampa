@@ -111,7 +111,8 @@
                 //Se crean las variables para el total de calorias y precio para luego ir sumando.
                 var total_calorias = 0;
                 var total_precio = 0;
-                var cantidadDeMenus = document.getElementsByClassName("calorias").length; 
+                menus =  document.getElementsByName("calorias");
+                var cantidadDeMenus =menus.length; 
                 
                 //Ahora se navega por los elementos del formulario que contienen los datos que necesitamos y se extraen sus valores.
                 for (let i = 0; i < cantidadDeMenus; i++) {
