@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="estilo.css">
 
     <script>
+        //CAMPOS GLOBALES
+        var permiteSubmit = true;
+        //var arrayErrores = [];
         //Comprueba que los inputs nombre, apellidos, nif, email, telefono, direccion, tarjeta, caducidad y codigo-seguridad no están vacíos.
 
-        function comprobar() {
-            var paraSubmit = true;
+        function compruebaCompleto() {
             var campoNombre = document.getElementById("fnombre").value.trim();
             var campoApellidos = document.getElementById("fapellidos").value.trim();
             var campoNif = document.getElementById("fnif").value.trim();
@@ -25,56 +27,111 @@
             if (campoNombre == "" || campoApellidos == "" || campoNif == "" || campoEmail == "" || campoTelefono == "" || campoDireccion == ""
                 || campoTarjeta == "" || campoCaducidad == "" || campoCodigo == "") {
                 alert("Por favor, rellene todos los campos.");
-                var paraSubmit = false;
+                return permiteSubmit = false;
             }
         }
 
-        /*function compruebaNif() {
-            var paraSubmit = true;
+        function compruebaNif() {
             var campoNif = document.getElementById("fnif").value;
-            if (/^\d{4,9}-[a-zA-Z]$/.test(campoNif)) {
-                var paraSubmit = true;
-            } else {
+            _regexExp = /^\d{4,9}-[a-zA-Z]$/;
+            if (!_regexExp.test(campoNif)) {
                 alert("El NIF debe estar compuesto por entre 4 y 9 dígitos seguidos de un guión y una letra")
-                var paraSubmit = false;
-                a = 5;
+                return permiteSubmit = false;
             }
-
-
-        }*/
-
-        function calcula() {
-            //Se crean las variables para el total de calorias y precio para luego ir sumando.
-            var total_calorias = 0;
-            var total_precio = 0;
-            calorias = new Array;
-            precios = new Array;
-            cantidades = new Array;
-
-
-            //Ahora se navega por los elementos del formulario que contienen los datos que necesitamos y se extraen sus valores.
-            for (let i = 0; i < 31; i++) {
-                var caloria = document.getElementsByName("calorias").item(i).textContent;
-                var precio = document.getElementsByName("precio").item(i).textContent;
-                //En el precio hay que reemplazar las comas por puntos para poder operar.
-                precio = precio.replace(/,/g, '.');
-                var cantidad = document.getElementsByClassName("input-cantidad").item(i).value;
-                //Se actualizan las variables totales con los nuevos valores.
-                total_calorias = total_calorias + (caloria * cantidad);
-                total_precio = total_precio + (precio * cantidad);
-                calorias.push(caloria);
-                precios.push(precio);
-                cantidades.push(cantidad);
-            }
-            //Mensaje para informar al usuario.
-            total_precio = total_precio.toString().replace(/\./g, ',');
-            alert("Su selección contiene:\n" + total_calorias + " kcal\n\n y tiene un precio total de:\n" + total_precio + " €.");
-
         }
 
+        function compruebaCorreo() {
+            var campoEmail = document.getElementById("femail").value;
+            _regexExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (!_regexExp.test(campoEmail)) {
+                alert("Por favor, introduzca una dirección de correo electrónico válida.")
+                return permiteSubmit = false;
+            }
+        }
+
+        function compruebaTelefono() {
+            var campoTelefono = document.getElementById("ftelefono").value;
+            _regexExp = /^\d{9}$/;
+            if (!_regexExp.test(campoTelefono)) {
+                alert("Por favor, introduzca un número de teléfono válido.")
+                return permiteSubmit = false;
+            }
+        }
+
+
+
+            /*function compruebaCampo(_campo) {
+                _objeto = document.getElementById(_campo).value.trim();
+                if (_objeto == "") {
+                    permiteSubmit = false;
+                    arrayErrores.push(_objeto);
+                    return _objeto;
+                }
+    
+                switch (_campo) {
+                    case "fnif":
+                        if (!(/^\d{4,9}-[a-zA-Z]$/.test(_campo))) {
+                            alert("El NIF debe estar compuesto por entre 4 y 9 dígitos seguidos de un guión y una letra")
+                            return permiteSubmit = false;
+                        }
+                        break;
+    
+                    case "fcorreo":
+    
+                        break;
+    
+                    default:
+                        Console.log("Caso no capturado: " + _campo);
+                        break;
+                }
+    
+                ud(_campo == "fnif"){
+    
+                }
+                return _objeto
+            }
+    
+            //PENES (y tal)
+            function compruebaCampos() {
+                var campoNombre = compruebaCampo("fnombre");
+                var campoApellidos = compruebaCampo("fapellidos");
+                var campoNif = compruebaCampo("fnif");
+                var campoEmail = compruebaCampo("f");
+                var campoTelefono = compruebaCampo();
+                var campoDireccion = compruebaCampo();
+                var campoTarjeta = compruebaCampo();
+                var campoCaducidad = compruebaCampo();
+                var campoCodigo = compruebaCampo();
+                if (permiteSubmit == false) {
+                    alert("Por favor, rellene todos los campos.");
+                }
+            }*/
+
+            function calcula() {
+                //Se crean las variables para el total de calorias y precio para luego ir sumando.
+                var total_calorias = 0;
+                var total_precio = 0;
+                var cantidadDeMenus = document.getElementsByClassName("calorias").length; 
+                
+                //Ahora se navega por los elementos del formulario que contienen los datos que necesitamos y se extraen sus valores.
+                for (let i = 0; i < cantidadDeMenus; i++) {
+                    var caloria = document.getElementsByName("calorias").item(i).textContent;
+                    var precio = document.getElementsByName("precio").item(i).textContent;
+                    precio = parseFloat(precio);
+                    var cantidad = document.getElementsByClassName("input-cantidad").item(i).value;
+
+                    //En el precio hay que reemplazar las comas por puntos para poder operar.
+                    //precio = precio.replace(/,/g, '.');
+                    //Se actualizan las variables totales con los nuevos valores.
+                    total_calorias = total_calorias + (caloria * cantidad);
+                    total_precio = total_precio + (precio * cantidad);
+                }
+                //Mensaje para informar al usuario.
+                total_precio = total_precio.toString().replace(/\./g, ',');
+                alert("Su selección contiene:\n" + total_calorias + " kcal\n\n y tiene un precio total de:\n" + total_precio + " €.");
+            }
 
     </script>
-
 </head>
 
 <body>
@@ -86,7 +143,7 @@
             tradicional y tan buenos que creeras que vienen de otro planeta.</p>
         <div class="form">
             <form action="mailto:rjimenez591@alumno.uned.es" method="POST" enctype="text/plain" id="form1"
-                onsubmit="return paraSubmit">
+                onsubmit="return permiteSubmit">
                 <fieldset>
                     <legend>Menús</legend>
                     <label>Menú 1: Salteado de legumbres a la plancha + Bistec con patatas fritas + Refresco - <span
@@ -253,13 +310,11 @@
                     </table>
                 </fieldset>
                 <input type="reset">
-                <input type="submit" value="Hacer pedido" onClick="comprobar()">
+                <input type="submit" value="Hacer pedido" onclick="compruebaCompleto(); compruebaNif();compruebaCorreo();compruebaTelefono()">
             </form>
             <button value="calcular" onclick="calcula()">Calcula las kcal y precio de tu pedido</button>
         </div>
     </div>
-
-
 </body>
 
 </html>
