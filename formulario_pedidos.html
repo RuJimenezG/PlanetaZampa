@@ -11,96 +11,6 @@
     <script>
         //CAMPOS GLOBALES
         var permiteSubmit = true;
-        //////////////////////////////// Pruebas de funciones para comprobar campos
-        ////
-        //Comprueba que los inputs nombre, apellidos, nif, email, telefono, direccion, tarjeta, caducidad y codigo-seguridad no están vacíos.
-        /*function compruebaCompleto() {
-            var campoNombre = document.getElementById("fnombre").value.trim();
-            var campoApellidos = document.getElementById("fapellidos").value.trim();
-            var campoNif = document.getElementById("fnif").value.trim();
-            var campoEmail = document.getElementById("femail").value.trim();
-            var campoTelefono = document.getElementById("ftelefono").value.trim();
-            var campoDireccion = document.getElementById("fdireccion").value.trim();
-            var campoTarjeta = document.getElementById("ftarjeta").value.trim();
-            var campoCaducidad = document.getElementById("fcaducidad").value.trim();
-            var campoCodigo = document.getElementById("fcodigo").value.trim();
-            if (campoNombre == "" || campoApellidos == "" || campoNif == "" || campoEmail == "" || campoTelefono == "" || campoDireccion == ""
-                || campoTarjeta == "" || campoCaducidad == "" || campoCodigo == "") {
-                alert("Por favor, rellene todos los campos.");
-                return permiteSubmit = false;
-            }
-        }
-        function compruebaCompleto() {
-            var _campos = new Array('fnombre', 'fapellidos', 'fnif', 'femail', 'ftelefono', 'fdireccion', 'ftarjeta', 'fcaducidad', 'fcodigo');
-            a = 1;
-            for (let i = 0; i < _campos.length; i++) {
-                var _campo = document.getElementById(_campos[i]);
-                if (_campo.value.trim() == "") {
-                    alert ("Por favor, rellene todos los campos");
-                    _campo.focus();
-                    return PermiteSubmit = false;
-                }
-            }
-        }
-        function comprueba2(){
-            var _campos = new Array('fnombre', 'fapellidos', 'fnif', 'femail', 'ftelefono', 'fdireccion', 'ftarjeta', 'fcaducidad', 'fcodigo');
-            _campos.forEach(_e => {
-                div_campo = document.getElementById(_e);
-                if (div_campo.value.trim() == "") {
-                    alert ("Por favor, rellene todos los campos");
-                    div_campo.focus();
-                    return PermiteSubmit = false;
-                }
-            })
-        }
-                    /*function compruebaCampo(_campo) {
-                _objeto = document.getElementById(_campo).value.trim();
-                if (_objeto == "") {
-                    permiteSubmit = false;
-                    arrayErrores.push(_objeto);
-                    return _objeto;
-                }
-    
-                switch (_campo) {
-                    case "fnif":
-                        if (!(/^\d{4,9}-[a-zA-Z]$/.test(_campo))) {
-                            alert("El NIF debe estar compuesto por entre 4 y 9 dígitos seguidos de un guión y una letra")
-                            return permiteSubmit = false;
-                        }
-                        break;
-    
-                    case "fcorreo":
-    
-                        break;
-    
-                    default:
-                        Console.log("Caso no capturado: " + _campo);
-                        break;
-                }
-    
-                ud(_campo == "fnif"){
-    
-                }
-                return _objeto
-            }
-    
-            //PRUEBAS PARA HACERLO DE OTRA FORMA
-            function compruebaCampos() {
-                var campoNombre = compruebaCampo("fnombre");
-                var campoApellidos = compruebaCampo("fapellidos");
-                var campoNif = compruebaCampo("fnif");
-                var campoEmail = compruebaCampo("f");
-                var campoTelefono = compruebaCampo();
-                var campoDireccion = compruebaCampo();
-                var campoTarjeta = compruebaCampo();
-                var campoCaducidad = compruebaCampo();
-                var campoCodigo = compruebaCampo();
-                if (permiteSubmit == false) {
-                    alert("Por favor, rellene todos los campos.");
-                }
-            }*/
-        ///////////////////////////////////////////////////////////////////////
-
 
         function compruebaCampos(){
             campos = document.querySelectorAll("fieldset#datos-cliente input");
@@ -113,9 +23,6 @@
             })
         }
         
-        ///////////////////////////////
-
-
         //Comprueba que el NIF tiene entre 4 y 9 dígitos seguidos de un guión y luego una letra. Para esto se puede usar regex. Ayudas  aquí debajo:
         //https://learnxinyminutes.com/docs/pcre/
         //https://regex101.com/
