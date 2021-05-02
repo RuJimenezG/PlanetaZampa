@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
-<script src="../js/index.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -22,124 +22,326 @@
                 onsubmit="return permiteSubmit">
                 <fieldset>
                     <legend>Menús</legend>
-                    <label>Menú 1: Salteado de legumbres a la plancha + Bistec con patatas fritas + Refresco - <span
-                            name="calorias">950</span> kcal
-                        - <span name="precio">13</span> €</label><br>
-                    <input type="number" min="0" max="100" name="menu1" class="input-cantidad"><br>
-                    <label>Menú 2: Salteado de verduras con arroz + Salmón al horno con espárragos y puré de patata +
-                        Refresco - <span name="calorias">950</span> kcal - <span name="precio">12</span> €</label><br>
-                    <input type="number" min="0" max="100" name="menu2" class="input-cantidad"><br>
-                    <label>Menú 3: Sepia salteada con verduritas + Salchicha alemana al horno + Refresco - <span
-                            name="calorias">950</span> kcal - <span name="precio">13</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="menu3" class="input-cantidad"><br>
-                    <label>Menú 4: Esparragos a la plancha con jamón + Boquerones fritos al limón + Refresco - <span
-                            name="calorias">850</span> kcal
-                        - <span name="precio">13</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="menu4" class="input-cantidad"><br>
-                    <label>Menú 5: Guisantes con jamón y huevo + Pollo asado con verduras salteadas + Refresco - <span
-                            name="calorias">950
-                        </span> kcal - <span name="precio">13</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="menu5" class="input-cantidad"><br>
+                    <table><tr>
+                        <th>Nombre</th>
+                        <th>Alérgenos</th>
+                        <th>kcal</th>
+                        <th>€</th>
+                        <th></th></tr>
+                        <tr>
+                            <td class="plato">Menú 1: Salteado de legumbres a la plancha + Bistec con patatas fritas +
+                                Refresco</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">950</td>
+                            <td class="precio">13</td>
+                            <td class="input"><input type="number" min="0" max="10" name="menu1"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Menú 2: Salteado de verduras con arroz + Salmón al horno con espárragos y
+                                puré de patata</td>
+                            <td class="alergenos">Gluten - Pescado</td>
+                            <td class="calorias">950</td>
+                            <td class="precio">12</td>
+                            <td class="input"><input type="number" min="0" max="10" name="menu2"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Menú 3: Sepia salteada con verduritas + Salchicha alemana al horno +
+                                Refresco</td>
+                            <td class="alergenos">Pescado</td>
+                            <td class="calorias">950</td>
+                            <td class="precio">13</td>
+                            <td class="input"><input type="number" min="0" max="10" name="menu3"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Menú 4: Esparragos a la plancha con jamón + Boquerones fritos al limón +
+                                Refresco</td>
+                            <td class="alergenos">Pescado - Gluten</td>
+                            <td class="calorias">850</td>
+                            <td class="precio">13</td>
+                            <td class="input"><input type="number" min="0" max="10" name="menu4"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Menú 5: Guisantes con jamón y huevo + Pollo asado con verduras salteadas +
+                                Refresco</td>
+                            <td class="alergenos">Huevo</td>
+                            <td class="calorias">950</td>
+                            <td class="precio">13</td>
+                            <td class="input"><input type="number" min="0" max="10" name="menu5"
+                                    class="input-cantidad"></td>
+                        </tr>
+                    </table>
                 </fieldset>
                 <fieldset>
                     <legend>Verduras</legend>
-                    <label>Salteado de legumbres a la plancha - <span name="calorias">250</span> kcal -
-                        <span name="precio">5</span> €</label><br>
-                    <input type="number" min="0" max="100" name="salteado-legumbres" class="input-cantidad"><br>
-                    <label>Salteado de verduras con arroz - <span name="calorias">450</span> kcal - <span
-                            name="precio">6</span> €</label><br>
-                    <input type="number" min="0" max="100" name="salteado-verduras" class="input-cantidad"><br>
-                    <label>Sepia salteada con verduritas - <span name="calorias">400</span> kcal - <span
-                            name="precio">7</span> €</label><br>
-                    <input type="number" min="0" max="100" name="sepia" class="input-cantidad"><br>
-                    <label>Espárragos a la plancha con jamón - <span name="calorias">250</span> kcal - <span
-                            name="precio">5</span> €</label><br>
-                    <input type="number" min="0" max="100" name="esparragos" class="input-cantidad"><br>
-                    <label>Guisantes con jamón y huevo - <span name="calorias">350</span> kcal - <span
-                            name="precio">6</span> €</label><br>
-                    <input type="number" min="0" max="100" name="guisantes" class="input-cantidad"><br>
+                    <table><tr>
+                        <th>Nombre</th>
+                        <th>Alérgenos</th>
+                        <th>kcal</th>
+                        <th>€</th>
+                        <th></th></tr>
+                        <tr>
+                            <td class="plato">Salteado de legumbres a la plancha</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">250</td>
+                            <td class="precio">5</td>
+                            <td class="input"><input type="number" min="0" max="10" name="salteado-legumbres"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Salteado de verduras con arroz</td>
+                            <td class="alergenos">Arroz</td>
+                            <td class="calorias">450</td>
+                            <td class="precio">6</td>
+                            <td class="input"><input type="number" min="0" max="10" name="salteado-verduras"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Sepia salteada con verduritas</td>
+                            <td class="alergenos">Pescado</td>
+                            <td class="calorias">400</td>
+                            <td class="precio">7</td>
+                            <td class="input"><input type="number" min="0" max="10" name="sepia"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Espárragos a la plancha con jamón</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">250</td>
+                            <td class="precio">5</td>
+                            <td class="input"><input type="number" min="0" max="10" name="esparragos"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Guisantes con jamón y huevo</td>
+                            <td class="alergenos">Huevo</td>
+                            <td class="calorias">350</td>
+                            <td class="precio">6</td>
+                            <td class="input"><input type="number" min="0" max="10" name="guisantes"
+                                    class="input-cantidad"></td>
+                        </tr>
+                    </table>
                 </fieldset>
                 <fieldset>
                     <legend>Carnes</legend>
-                    <label>Bistec con patatas fritas - <span name="calorias">650</span> kcal - <span
-                            name="precio">8</span> €</label><br>
-                    <input type="number" min="0" max="100" name="bistec" class="input-cantidad"><br>
-                    <label>Pollo asado con verduras salteadas - <span name="calorias">550</span> kcal - <span
-                            name="precio">6</span> €</label><br>
-                    <input type="number" min="0" max="100" name="pollo" class="input-cantidad"><br>
-                    <label>Costillas a la barbacoa - <span name="calorias">650</span> kcal - <span
-                            name="precio">7</span> €</label><br>
-                    <input type="number" min="0" max="100" name="costillas" class="input-cantidad"><br>
-                    <label>Salchicha alemana al horno - <span name="calorias">450</span> kcal - <span
-                            name="precio">5</span> €</label><br>
-                    <input type="number" min="0" max="100" name="salchicha" class="input-cantidad"><br>
-                    <label>Alitas de pollo en salsa agridulce - <span name="calorias">450</span> kcal - <span
-                            name="precio">6</span> €</label><br>
-                    <input type="number" min="0" max="100" name="alitas" class="input-cantidad"><br>
+                    <table><tr>
+                        <th>Nombre</th>
+                        <th>Alérgenos</th>
+                        <th>kcal</th>
+                        <th>€</th>
+                        <th></th></tr>
+                        <tr>
+                            <td class="plato">Bistec con patatas fritas</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">650</td>
+                            <td class="precio">8</td>
+                            <td class="input"><input type="number" min="0" max="10" name="bistec"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Pollo asado con verduras salteadas</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">550</td>
+                            <td class="precio">6</td>
+                            <td class="input"><input type="number" min="0" max="10" name="pollo"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Costillas a la barbacoa</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">600</td>
+                            <td class="precio">7</td>
+                            <td class="input"><input type="number" min="0" max="10" name="costillas"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Salchicha alemana al horno</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">450</td>
+                            <td class="precio">5</td>
+                            <td class="input"><input type="number" min="0" max="10" name="salchicha"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Alitas de pollo en salsa agridulce</td>
+                            <td class="alergenos">Gluten</td>
+                            <td class="calorias">450</td>
+                            <td class="precio">6</td>
+                            <td class="input"><input type="number" min="0" max="10" name="alitas"
+                                    class="input-cantidad"></td>
+                        </tr>
+                    </table>
                 </fieldset>
                 <fieldset>
                     <legend>Pescados</legend>
-                    <label>Lubina al horno en salsa de lima con romero y espárragos - <span name="calorias">450</span>
-                        kcal - <span name="precio">5</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="lubina" class="input-cantidad"><br>
-                    <label>Dorada al horno con patatas panaderas - <span name="calorias">500</span> kcal - <span
-                            name="precio">6</span> €</label><br>
-                    <input type="number" min="0" max="100" name="dorada" class="input-cantidad"><br>
-                    <label>Boquerones fritos al limón - <span name="calorias">550</span> kcal - <span
-                            name="precio">7</span> €</label><br>
-                    <input type="number" min="0" max="100" name="boquerones" class="input-cantidad"><br>
-                    <label>Salmón al horno con espárragos y puré de patata - <span name="calorias">450</span> kcal -
-                        <span name="precio">5</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="salmón" class="input-cantidad"><br>
-                    <label>Medallones de merluza a la plancha con tomate - <span name="calorias">400</span> kcal - <span
-                            name="precio">6</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="merluza" class="input-cantidad"><br>
+                    <table><tr>
+                        <th>Nombre</th>
+                        <th>Alérgenos</th>
+                        <th>kcal</th>
+                        <th>€</th>
+                        <th></th></tr>
+                        <tr>
+                            <td class="plato">Lubina al horno en salsa de lima con romero y espárragos</td>
+                            <td class="alergenos">Pescado</td>
+                            <td class="calorias">450</td>
+                            <td class="precio">5</td>
+                            <td class="input"><input type="number" min="0" max="10" name="lubina"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Dorada al horno con patatas panaderas</td>
+                            <td class="alergenos">Pescado</td>
+                            <td class="calorias">500</td>
+                            <td class="precio">6</td>
+                            <td class="input"><input type="number" min="0" max="10" name="dorada"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Boquerones fritos al limón</td>
+                            <td class="alergenos">Pescado - Gluten</td>
+                            <td class="calorias">550</td>
+                            <td class="precio">7</td>
+                            <td class="input"><input type="number" min="0" max="10" name="boquerones"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Salmón al horno con espárragos y puré de patata</td>
+                            <td class="alergenos">Pescado</td>
+                            <td class="calorias">450</td>
+                            <td class="precio">5</td>
+                            <td class="input"><input type="number" min="0" max="10" name="salmon"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Medallones de merluza a la plancha con tomate</td>
+                            <td class="alergenos">Pescado</td>
+                            <td class="calorias">400</td>
+                            <td class="precio">6</td>
+                            <td class="input"><input type="number" min="0" max="10" name="merluza"
+                                    class="input-cantidad"></td>
+                        </tr>
+                    </table>
                 </fieldset>
                 <fieldset>
                     <legend>Postres</legend>
-                    <label>Crema de yogur con fresas - <span name="calorias">450</span> kcal - <span
-                            name="precio">2,50</span> €</label><br>
-                    <input type="number" min="0" max="100" name="yogur" class="input-cantidad"><br>
-                    <label>Pudin casero - <span name="calorias">500</span> kcal - <span name="precio">2,50</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="pudin" class="input-cantidad"><br>
-                    <label>Queso fresco con miel y nueces - <span name="calorias">250</span> kcal - <span
-                            name="precio">1,50</span> €</label><br>
-                    <input type="number" min="0" max="100" name="queso" class="input-cantidad"><br>
-                    <label>Tarta marmol rosa - <span name="calorias">600</span> kcal - <span name="precio">3,50</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="tarta" class="input-cantidad"><br>
-                    <label>Copa de helado de varios sabores - <span name="calorias">600</span> kcal - <span
-                            name="precio">3</span> €</label><br>
-                    <input type="number" min="0" max="100" name="helado" class="input-cantidad"><br>
+                    <table><tr>
+                        <th>Nombre</th>
+                        <th>Alérgenos</th>
+                        <th>kcal</th>
+                        <th>€</th>
+                        <th></th></tr>
+                        <tr>
+                            <td class="plato">Crema de yogur con fresas</td>
+                            <td class="alergenos">Lácteos</td>
+                            <td class="calorias">450</td>
+                            <td class="precio">2,50</td>
+                            <td class="input"><input type="number" min="0" max="10" name="yogur"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Pudin casero</td>
+                            <td class="alergenos">Lácteos - Huevo</td>
+                            <td class="calorias">500</td>
+                            <td class="precio">2,50</td>
+                            <td class="input"><input type="number" min="0" max="10" name="pudin"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Queso fresco con miel y nueces</td>
+                            <td class="alergenos">Lácteos - Frutos de cáscara</td>
+                            <td class="calorias">250</td>
+                            <td class="precio">1,50</td>
+                            <td class="input"><input type="number" min="0" max="10" name="queso"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Tarta marmol rosa</td>
+                            <td class="alergenos">Lácteos - Gluten - Huevo</td>
+                            <td class="calorias">600</td>
+                            <td class="precio">3,50</td>
+                            <td class="input"><input type="number" min="0" max="10" name="tarta"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Copa de helado de varios sabores</td>
+                            <td class="alergenos">Lácteos</td>
+                            <td class="calorias">600</td>
+                            <td class="precio">3</td>
+                            <td class="input"><input type="number" min="0" max="10" name="helado"
+                                    class="input-cantidad"></td>
+                        </tr>
+                    </table>
                 </fieldset>
                 <fieldset>
                     <legend>Bebidas</legend>
-                    <label>Vino de la casa - <span name="calorias">50</span> kcal - <span name="precio">5</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="vino" class="input-cantidad"><br>
-                    <label>Refresco - <span name="calorias">50</span> kcal - <span name="precio">2,50</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="refresco" class="input-cantidad"><br>
-                    <label>Agua mineral - <span name="calorias">0</span> kcal - <span name="precio">1,50</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="agua" class="input-cantidad"><br>
-                    <label>Cerveza - <span name="calorias">50</span> kcal - <span name="precio">2</span> €</label><br>
-                    <input type="number" min="0" max="100" name="cerveza" class="input-cantidad"><br>
+                    <table><tr>
+                        <th>Nombre</th>
+                        <th>Alérgenos</th>
+                        <th>kcal</th>
+                        <th>€</th>
+                        <th></th></tr>
+                        <tr>
+                            <td class="plato">Vino de la casa</td>
+                            <td class="alergenos">Dióxido de azufre y sulfitos</td>
+                            <td class="calorias">50</td>
+                            <td class="precio">5</td>
+                            <td class="input"><input type="number" min="0" max="10" name="vino" class="input-cantidad">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Refresco</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">50</td>
+                            <td class="precio">2,50</td>
+                            <td class="input"><input type="number" min="0" max="10" name="refresco"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Agua mineral</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">0</td>
+                            <td class="precio">1,50</td>
+                            <td class="input"><input type="number" min="0" max="10" name="queso"
+                                    class="input-cantidad"></td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Cerveza</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">50</td>
+                            <td class="precio">2</td>
+                            <td class="input"><input type="number" min="0" max="10" name="tarta"
+                                    class="input-cantidad"></td>
+                        </tr>
+                    </table>
                 </fieldset>
                 <fieldset>
                     <legend>Extras</legend>
-                    <label>Pan - <span name="calorias">200</span> kcal - <span name="precio">1</span> €</label><br>
-                    <input type="number" min="0" max="100" name="pan" class="input-cantidad"><br>
-                    <label>Ensalada mixta - <span name="calorias">100</span> kcal - <span name="precio">2,50</span>
-                        €</label><br>
-                    <input type="number" min="0" max="100" name="ensalada" class="input-cantidad"><br>
+                    <table><tr>
+                        <th>Nombre</th>
+                        <th>Alérgenos</th>
+                        <th>kcal</th>
+                        <th>€</th>
+                        <th></th></tr>
+                        <tr>
+                            <td class="plato">Pan</td>
+                            <td class="alergenos">Gluten</td>
+                            <td class="calorias">200</td>
+                            <td class="precio">1</td>
+                            <td class="input"><input type="number" min="0" max="10" name="pan" class="input-cantidad">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="plato">Ensalada mixta</td>
+                            <td class="alergenos">Ninguno</td>
+                            <td class="calorias">100</td>
+                            <td class="precio">2,50</td>
+                            <td class="input"><input type="number" min="0" max="10" name="ensalada"
+                                    class="input-cantidad"></td>
+                        </tr>
+                    </table>
                 </fieldset>
                 <fieldset>
                     <label>Observaciones adicionales:</label><br>
@@ -150,9 +352,9 @@
                 </fieldset>
                 <fieldset id="datos-cliente">
                     <legend>Datos personales</legend>
-                    <table>
+                    <table class="datos">
                         <tr>
-                            <td>Nobre:</td>
+                            <td>Nombre:</td>
                             <td><input type="text" name="nombre" id="fnombre" required></td>
                         </tr>
                         <tr>
@@ -161,30 +363,37 @@
                         </tr>
                         <tr>
                             <td>NIF:</td>
-                            <td><input type="text" name="nif" id="fnif" required></td>
+                            <td><input type="text" name="nif" id="fnif"
+                                    placeholder="Entre 4 y 9 dígitos, un guión y una letra" required></td>
                         <tr>
                             <td>Correo electrónico:</td>
-                            <td><input type="text" name="email" id="femail" required></td>
+                            <td><input type="text" name="email" id="femail" placeholder="ejemplo@ejemplo.com" required>
+                            </td>
                         </tr>
                         <tr>
                             <td>Teléfono:</td>
-                            <td><input type="text" name="telefono" id="ftelefono" required></td>
+                            <td><input type="text" name="telefono" id="ftelefono"
+                                    placeholder="Debe ser un número de  9 dígitos" required></td>
                         </tr>
                         <tr>
                             <td>Dirección de entrega:</td>
-                            <td><input type="text" name="direccion" id="fdireccion" required></td>
+                            <td><input type="text" name="direccion" id="fdireccion" placeholder="Ejemplo: C/Falsa 123"
+                                    required></td>
                         </tr>
                         <tr>
                             <td>Tarjeta bancaria:</td>
-                            <td><input type="text" name="tarjeta" id="ftarjeta" required></td>
+                            <td><input type="text" name="tarjeta" id="ftarjeta"
+                                    placeholder="Debe estar formada por 16 dígitos" required></td>
                         </tr>
                         <tr>
                             <td>Caducidad:</td>
-                            <td><input type="text" name="caducidad" id="fcaducidad" required></td>
+                            <td><input type="text" name="caducidad" id="fcaducidad"
+                                    placeholder="Debe estar en formato MM/AA" required></td>
                         </tr>
                         <tr>
                             <td>Código de seguridad:</td>
-                            <td><input type="text" name="codigo-seguridad" id="fcodigo" required></td>
+                            <td><input type="text" name="codigo-seguridad" id="fcodigo"
+                                    placeholder="Debe ser un número de 3 dígitos" required></td>
                         </tr>
                     </table>
                 </fieldset>

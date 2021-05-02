@@ -6,6 +6,11 @@ header {
     vertical-align: middle;
 }
 
+header img {
+    height: 120px;
+    float: left;
+}
+
 body {
     background: #006d77;
     font-family: Verdana;
@@ -172,10 +177,60 @@ div.form {
     margin: 0 auto;
 }
 
-.form table {
-    margin-left: auto;
-    margin-right: auto;
-    border-color: white;
+form table {
+    width: 100%;
+    border: none;
+    padding: 6px;   
+}
+
+table.datos {
+    width: auto;
+    border: none;
+}
+
+table.datos td {
+    width: auto;
+    border: none;
+}
+
+form td {
+    border: 1px solid black;
+    padding: 6px;   
+}
+
+input[type=text] {
+    width: 200%;
+    overflow: auto;
+}
+
+input[type=number] {
+    width: 40px;
+    overflow: auto;
+}
+
+td.plato {
+    width: 50%;
+    border: 1px solid black;
+}
+
+td.alergenos {
+    width: 20%;
+    border: 1px solid black;
+}
+
+td.calorias {
+    width: 5%;
+    border: 1px solid black;
+}
+
+td.precio {
+    width: 5%;
+    border: 1px solid black;
+}
+
+td.input {
+    width: 5%;
+    border: 1px solid black;
 }
 
 /* Botón dropdown: pasas el cursor por encima y se despliega el menú*/

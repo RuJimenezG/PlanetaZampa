@@ -119,12 +119,12 @@ function calcula() {
     //Se crean las variables para el total de calorias y precio para luego ir sumando, así como la cantidad de menús para limitar el recorrido del for.
     var total_calorias = 0;
     var total_precio = 0;
-    menus = document.getElementsByName("calorias");
+    menus = document.getElementsByClassName("calorias");
     var cantidadDeMenus = menus.length;
     //Ahora se navega por los elementos del formulario que contienen los datos que necesitamos y se extraen sus valores.
     for (let i = 0; i < cantidadDeMenus; i++) {
-        var caloria = document.getElementsByName("calorias").item(i).textContent;
-        var precio = document.getElementsByName("precio").item(i).textContent;
+        var caloria = document.getElementsByClassName("calorias").item(i).textContent;
+        var precio = document.getElementsByClassName("precio").item(i).textContent;
         precio = parseFloat(precio);  // Con esto se convierte el precio con comas en un nº que separa los decimales con puntos.
         var cantidad = document.getElementsByClassName("input-cantidad").item(i).value;
         //Se actualizan las variables totales con los nuevos valores.
