@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE pedido [
+<!DOCTYPE pedidos [
+    <!ELEMENT pedidos (pedido*)>
     <!ELEMENT pedido (idpedido,productos)>
     <!ELEMENT idpedido (#PCDATA)>
-    <!ELEMENT productos (producto)>
+    <!ELEMENT productos (producto+)>
     <!ELEMENT producto (idproducto,tipo,nombre,cantidad,precio,alergenos,calorias)>
     <!ELEMENT idproducto (#PCDATA)>
     <!ELEMENT tipo (#PCDATA)>
@@ -14,17 +15,88 @@
     <!ELEMENT calorias (#PCDATA)>
 ]>
 
-<pedido>
-    <idpedido></idpedido>
-    <productos>
-        <producto>
-            <idproducto></idproducto>
-            <tipo></tipo>
-            <nombre></nombre>
-            <cantidad></cantidad>
-            <precio></precio>
-            <alergenos></alergenos>
-            <calorias></calorias>
-        </producto>
-    </productos>
-</pedido>
+<pedidos>
+    <pedido>
+        <idpedido>p1</idpedido>
+        <productos>
+            <producto>
+                <idproducto>menu1</idproducto>
+                <tipo>menu</tipo>
+                <nombre>Salteado de legumbres a la plancha + Bistec con patatas fritas + Refresco</nombre>
+                <cantidad>1</cantidad>
+                <precio>13</precio>
+                <alergenos>Ninguno</alergenos>
+                <calorias>950</calorias>
+            </producto>
+        </productos>
+    </pedido>
+    <pedido>
+        <idpedido>p2</idpedido>
+        <productos>
+            <producto>
+                <idproducto>legumbres</idproducto>
+                <tipo>pescado</tipo>
+                <nombre>Salteado de legumbres a la plancha</nombre>
+                <cantidad>1</cantidad>
+                <precio>5</precio>
+                <alergenos>Ninguno</alergenos>
+                <calorias>250</calorias>
+            </producto>
+            <producto>
+                <idproducto>vino</idproducto>
+                <tipo>bebida</tipo>
+                <nombre>Vino de la casa</nombre>
+                <cantidad>1</cantidad>
+                <precio>5</precio>
+                <alergenos>Dióxido de azufre y sulfitos</alergenos>
+                <calorias>50</calorias>
+            </producto>
+        </productos>
+    </pedido>
+    <pedido>
+        <idpedido>p3</idpedido>
+        <productos>
+            <producto>
+                <idproducto>guisantes</idproducto>
+                <tipo>verdura</tipo>
+                <nombre>Guisantes con jamón y huevo</nombre>
+                <cantidad>2</cantidad>
+                <precio>6</precio>
+                <alergenos>Huevo</alergenos>
+                <calorias>350</calorias>
+            </producto>
+            <producto>
+                <idproducto>lubina</idproducto>
+                <tipo>pescado</tipo>
+                <nombre>Lubina al horno en salsa de lima con romero y espárragos</nombre>
+                <cantidad>1</cantidad>
+                <precio>5</precio>
+                <alergenos>Pescado</alergenos>
+                <calorias>450</calorias>
+            </producto>
+            <producto>
+                <idproducto>salchicha</idproducto>
+                <tipo>carne</tipo>
+                <nombre>Salchicha alemana al horno</nombre>
+                <cantidad>1</cantidad>
+                <precio>5</precio>
+                <alergenos>Ninguno</alergenos>
+                <calorias>450</calorias>
+            </producto>
+        </productos>
+    </pedido>
+    <pedido>
+        <idpedido>p4</idpedido>
+        <productos>
+            <producto>
+                <idproducto>menu3</idproducto>
+                <tipo>menu</tipo>
+                <nombre>Sepia salteada con verduritas + Salchicha alemana al horno + Refresco</nombre>
+                <cantidad>4</cantidad>
+                <precio>13</precio>
+                <alergenos>Pescado</alergenos>
+                <calorias>950</calorias>
+            </producto>
+        </productos>
+    </pedido>
+</pedidos>
