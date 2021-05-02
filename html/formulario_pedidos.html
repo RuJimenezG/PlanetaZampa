@@ -6,8 +6,8 @@
     <title>Planeta Zampa</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-<script src="js/index.js"></script>
+    <link rel="stylesheet" href="../css/estilo.css">
+<script src="../js/index.js"></script>
 </head>
 
 <body>
@@ -189,7 +189,7 @@
                     </table>
                 </fieldset>
                 <input type="reset">
-                <input type="submit" value="Hacer pedido" onclick="permiteSubmit=true;compruebaCampos(); compruebaNif();compruebaCorreo();compruebaTelefono();compruebaFecha();">
+                <input type="submit" value="Hacer pedido" onclick="comprobaciones()">
             </form>
             <button value="calcular" onclick="calcula()">Calcula las kcal y precio de tu pedido</button>
         </div>
